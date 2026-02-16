@@ -1,176 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StudentHub</title>
+<title>SkillAI</title>
 
-<link rel="stylesheet" href="index.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
-<a class="logo">StudentHub</a>
+<div class="logo">
+<i class="fa-solid fa-brain"></i>
+<span>SkillAI</span>
+</div>
 
 <ul class="menu">
-<li><a href="#">Home</a></li>
-<li><a href="#">Courses</a></li>
-<li><a href="#">Opportunities</a></li>
-<li><a href="#">Market Trends</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="#">Skills</a></li>
+<li><a href="#">AI Guide</a></li>
 </ul>
+
 </nav>
 
+
 <!-- HERO -->
-<section class="hero">
+<section class="hero fade-in">
 
-<div class="hero-text">
-<h1>Welcome to StudentHub</h1>
-<h2>Discover Skills & Opportunities</h2>
-<p>Find trending careers and courses for your future</p>
+<div class="hero-left">
+<h1>Build Future-Ready Skills with AI Guidance</h1>
+<p>A structured learning platform that helps students master in-demand skills step by step.</p>
 
-<div class="search-box">
-<input placeholder="Search courses or careers">
-<button>Explore</button>
+<div class="hero-buttons">
+<button class="primary-btn">Start Learning</button>
+<button class="secondary-btn">Explore Skills</button>
 </div>
 </div>
 
-<div class="hero-image">
-<img src="image/hero1.svg">
+<div class="hero-right">
+<img src="image/hero3.png" alt="Hero Image">
 </div>
 
+</section>
+
+<!-- METRICS -->
+<section class="metrics fade-in">
+<div>
+<h2>10+</h2>
+<p>Skills</p>
+</div>
+
+<div>
+<h2>50+</h2>
+<p>Projects</p>
+</div>
+
+<div>
+<h2>AI Powered</h2>
+<p>Guidance</p>
+</div>
 </section>
 
 <!-- SKILLS -->
-<div class="choose"><h2>Trending Skills</h2></div>
+<section class="skills-section fade-in">
+<h2>Explore Skills</h2>
+<div class="section-divider"></div>
 
-<section class="trending-skills">
-
-<div class="skill-box web">
-<img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
-<h3>Web Development</h3>
-<button>Explore</button>
-</div>
-
-<div class="skill-box ai">
-<img src="https://cdn-icons-png.flaticon.com/512/4149/4149676.png">
-<h3>AI & Machine Learning</h3>
-<button>Explore</button>
-</div>
-
-<div class="skill-box digital">
-<img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png">
-<h3>Digital Marketing</h3>
-<button>Explore</button>
-</div>
-
-<div class="skill-box govt">
-<img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png">
-<h3>Govt Exam Prep</h3>
-<button>Explore</button>
+<div class="skills-grid">
+<!-- JS will render skills here -->
 </div>
 
 </section>
 
-<!-- OPPORTUNITIES -->
-<div class="choose"><h2>Latest Opportunities</h2></div>
+<!-- PROCESS -->
+<section class="process fade-in">
+<h2>How It Works</h2>
+<div class="section-divider"></div>
 
-<section class="opportunities">
+<div class="process-grid">
 
-<div class="card web">
-<img src="https://cdn-icons-png.flaticon.com/512/2466/2466734.png">
-<h3>Software Engineer Intern</h3>
-<p>Google</p>
-<button>Apply Now</button>
+<div class="process-card">
+<h3>1. Choose Skill</h3>
+<p>Select your desired learning path.</p>
 </div>
 
-<div class="card ai">
-<img src="https://cdn-icons-png.flaticon.com/512/7672/7672597.png">
-<h3>SSC CGL 2026 Exam</h3>
-<p>Staff Selection Commission</p>
-<button>Apply Now</button>
+<div class="process-card">
+<h3>2. Follow Roadmap</h3>
+<p>Complete structured learning steps.</p>
 </div>
 
-<div class="card digital">
-<img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png">
-<h3>Marketing Executive Job</h3>
-<p>Job Opening</p>
-<button>Apply Now</button>
+<div class="process-card">
+<h3>3. Get AI Guidance</h3>
+<p>Receive personalized support from AI.</p>
 </div>
 
-<div class="card govt">
-<img src="https://cdn-icons-png.flaticon.com/512/732/732600.png">
-<h3>Research Analyst Intern</h3>
-<button>Apply Now</button>
 </div>
-
 </section>
 
-<!-- WHY CHOOSE -->
-<div class="choose"><h2>Why Choose Us?</h2></div>
+<!-- AI SECTION -->
+<section class="ai-preview fade-in">
 
-<section class="why-choose-us">
-
-<div class="reason">
-<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-<h3>Expert Guidance</h3>
-<p>Get career advice from industry experts.</p>
+<div class="ai-left">
+<h2>Your Personal AI Learning Assistant</h2>
+<div class="section-divider"></div>
+<ul>
+<li>Suggests next learning steps</li>
+<li>Answers skill-related questions</li>
+<li>Recommends practical projects</li>
+</ul>
+<button class="primary-btn">Try AI Guide</button>
 </div>
 
-<div class="reason">
-<img src="https://cdn-icons-png.flaticon.com/512/6747/6747157.png">
-<h3>Personalized Learning</h3>
-<p>Courses tailored to your goals.</p>
+<div class="ai-right">
+<div class="chat-box">
+<p><strong>You:</strong> How do I start AI?</p>
+<p><strong>AI:</strong> Start with Python basics and fundamental mathematics.</p>
 </div>
-
-<div class="reason">
-<img src="https://cdn-icons-png.flaticon.com/512/3212/3212202.png">
-<h3>Career Opportunities</h3>
-<p>Discover jobs and internships.</p>
 </div>
 
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-
-  <div class="footer-container">
-
-    <!-- About -->
-    <div class="footer-section">
-      <h3>About Us</h3>
-      <a href="#">Our Mission</a>
-      <a href="#">Contact Us</a>
-    </div>
-
-    <!-- Quick Links -->
-    <div class="footer-section">
-      <h3>Quick Links</h3>
-      <a href="#">Courses</a>
-      <a href="#">Job Listings</a>
-    </div>
-
-    <!-- Follow Us -->
-    <div class="footer-section">
-      <h3>Follow Us</h3>
-
-      <div class="social-icons">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Bottom -->
-  <div class="footer-bottom">
-    © 2024 StudentHub. All rights reserved.
-  </div>
-
+<p>© 2026 SkillAI. All rights reserved.</p>
 </footer>
 
+<!-- FADE IN SCRIPT -->
+<script>
+const faders = document.querySelectorAll(".fade-in");
+
+window.addEventListener("scroll", () => {
+    faders.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 100){
+            section.classList.add("show");
+        }
+    });
+});
+</script>
+
 </body>
+<script src="skill.js"></script>
+<script src="index.js"></script>
 </html>
