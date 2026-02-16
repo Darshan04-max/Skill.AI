@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SkillAI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+<div class="logo">
+<i class="fa-solid fa-brain"></i>
+<span>SkillAI</span>
+</div>
+
+<ul class="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="#">Skills</a></li>
+<li><a href="#">AI Guide</a></li>
+</ul>
+
+</nav>
+
+
+<!-- HERO -->
+<section class="hero fade-in">
+
+<div class="hero-left">
+<h1>Build Future-Ready Skills with AI Guidance</h1>
+<p>A structured learning platform that helps students master in-demand skills step by step.</p>
+
+<div class="hero-buttons">
+<button class="primary-btn">Start Learning</button>
+<button class="secondary-btn">Explore Skills</button>
+</div>
+</div>
+
+<div class="hero-right">
+<img src="image/hero3.png" alt="Hero Image">
+</div>
+
+</section>
+
+<!-- METRICS -->
+<section class="metrics fade-in">
+<div>
+<h2>10+</h2>
+<p>Skills</p>
+</div>
+
+<div>
+<h2>50+</h2>
+<p>Projects</p>
+</div>
+
+<div>
+<h2>AI Powered</h2>
+<p>Guidance</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section fade-in">
+<h2>Explore Skills</h2>
+<div class="section-divider"></div>
+
+<div class="skills-grid">
+<!-- JS will render skills here -->
+</div>
+
+</section>
+
+<!-- PROCESS -->
+<section class="process fade-in">
+<h2>How It Works</h2>
+<div class="section-divider"></div>
+
+<div class="process-grid">
+
+<div class="process-card">
+<h3>1. Choose Skill</h3>
+<p>Select your desired learning path.</p>
+</div>
+
+<div class="process-card">
+<h3>2. Follow Roadmap</h3>
+<p>Complete structured learning steps.</p>
+</div>
+
+<div class="process-card">
+<h3>3. Get AI Guidance</h3>
+<p>Receive personalized support from AI.</p>
+</div>
+
+</div>
+</section>
+
+<!-- AI SECTION -->
+<section class="ai-preview fade-in">
+
+<div class="ai-left">
+<h2>Your Personal AI Learning Assistant</h2>
+<div class="section-divider"></div>
+<ul>
+<li>Suggests next learning steps</li>
+<li>Answers skill-related questions</li>
+<li>Recommends practical projects</li>
+</ul>
+<button class="primary-btn">Try AI Guide</button>
+</div>
+
+<div class="ai-right">
+<div class="chat-box">
+<p><strong>You:</strong> How do I start AI?</p>
+<p><strong>AI:</strong> Start with Python basics and fundamental mathematics.</p>
+</div>
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+<p>© 2026 SkillAI. All rights reserved.</p>
+</footer>
+
+<!-- FADE IN SCRIPT -->
+<script>
+const faders = document.querySelectorAll(".fade-in");
+
+window.addEventListener("scroll", () => {
+    faders.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 100){
+            section.classList.add("show");
+        }
+    });
+});
+</script>
+
+</body>
+<script src="skill.js"></script>
+<script src="index.js"></script>
+</html>
