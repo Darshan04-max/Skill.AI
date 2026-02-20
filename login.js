@@ -9,11 +9,6 @@ function loginUser(){
         return;
     }
 
-    // Save user data (mock database)
-    localStorage.setItem("userEmail", email);
-    localStorage.setItem("userPassword", password);
-
-    // Set active session
     localStorage.setItem("currentUser", email);
 
     window.location.href = "dashboard.html";

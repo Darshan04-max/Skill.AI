@@ -8,7 +8,10 @@ const skills = [
         intermediate:["Machine Learning","Model Evaluation"],
         advanced:["Deep Learning","AI Deployment"]
     },
-    projects:["AI Chatbot","Image Classifier"]
+    projects:["AI Chatbot","Image Classifier"],
+    resources:[
+        { title:"AI Overview - IBM", link:"https://www.ibm.com/topics/artificial-intelligence" }
+    ]
 },
 {
     id:2,
@@ -19,7 +22,11 @@ const skills = [
         intermediate:["ES6","APIs","Async JS"],
         advanced:["Node.js","System Design"]
     },
-    projects:["Portfolio Website","Task Manager App"]
+    projects:["Portfolio Website","Task Manager App"],
+    resources:[
+        { title:"MDN JS Guide", link:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" },
+        { title:"JavaScript Info", link:"https://javascript.info/" }
+    ]
 },
 {
     id:3,
@@ -30,6 +37,9 @@ const skills = [
         intermediate:["Collections","Exception Handling"],
         advanced:["Spring Boot","Microservices"]
     },
-    projects:["Library System","Banking App"]
+    projects:["Library System","Banking App"],
+    resources:[
+        { title:"Official Java Docs", link:"https://docs.oracle.com/javase/tutorial/" }
+    ]
 }
 ];

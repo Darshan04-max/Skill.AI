@@ -14,19 +14,22 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <!-- NAVBAR -->
 <nav class="navbar">
+
 <div class="logo">
-<i class="fa-solid fa-brain"></i>
-<span>SkillAI</span>
+    <a href="index.html" style="text-decoration:none; color:inherit;">
+        <i class="fa-solid fa-brain"></i> SkillAI
+    </a>
 </div>
 
 <ul class="menu">
 <li><a href="index.html">Home</a></li>
 <li><a href="dashboard.html">Dashboard</a></li>
-<li><a href="#">Skills</a></li>
-<li><a href="#">AI Guide</a></li>
+<li><a href="login.html">Login</a></li>
+<button id="themeToggle">🌙 Dark Mode</button>
 </ul>
 
 </nav>
+
 
 
 <!-- HERO -->
@@ -37,13 +40,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <p>A structured learning platform that helps students master in-demand skills step by step.</p>
 
 <div class="hero-buttons">
-<button class="primary-btn">Start Learning</button>
-<button class="secondary-btn">Explore Skills</button>
+<button class="primary-btn" onclick="goToDashboard()">
+Start Learning
+</button>
+
+<button class="secondary-btn" onclick="goToSkills()">
+Explore Skills
+</button>
+
 </div>
 </div>
 
 <div class="hero-right">
-<img src="image/hero3.png" alt="Hero Image">
+<img src="image/hero.svg" alt="Hero Image">
 </div>
 
 </section>
@@ -130,21 +139,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <p>© 2026 SkillAI. All rights reserved.</p>
 </footer>
 
-<!-- FADE IN SCRIPT -->
-<script>
-const faders = document.querySelectorAll(".fade-in");
+<!-- SCRIPTS -->
 
-window.addEventListener("scroll", () => {
-    faders.forEach(section => {
-        const rect = section.getBoundingClientRect();
-        if(rect.top < window.innerHeight - 100){
-            section.classList.add("show");
-        }
-    });
-});
-</script>
-
-</body>
+<script src="theme.js"></script>
 <script src="skill.js"></script>
 <script src="index.js"></script>
+<script src="dashboard.js"></script>
+</body>
 </html>

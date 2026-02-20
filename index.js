@@ -31,3 +31,17 @@ document.addEventListener("DOMContentLoaded", function(){
 function openSkill(id){
     window.location.href = "roadmap.html?id=" + id;
 }
+function goToDashboard(){
+    const currentUser = localStorage.getItem("currentUser");
+
+    if(currentUser){
+        window.location.href = "dashboard.html";
+    }else{
+        window.location.href = "login.html";
+    }
+}
+
+function goToSkills(){
+    document.querySelector(".skills-section")
+    .scrollIntoView({ behavior: "smooth" });
+}

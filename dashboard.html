@@ -8,13 +8,24 @@
 <body>
 
 <nav class="navbar">
-<div class="logo">SkillAI</div>
+
+<div class="logo">
+    <a href="index.html" style="text-decoration:none; color:inherit;">
+        SkillAI
+    </a>
+</div>
+
+<ul class="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li id="authLink"><a href="login.html">Login</a></li>
+</ul>
+
 </nav>
 
 <section class="dashboard-container">
 <h2>Your Learning Dashboard</h2>
 <h3 id="welcomeUser"></h3>
-
 
 <div class="dashboard-ai-summary">
     <h3>🤖 AI Learning Insight</h3>
@@ -27,6 +38,6 @@
 
 <script src="skill.js"></script>
 <script src="dashboard.js"></script>
-
+<script src="theme.js"></script>
 </body>
 </html>
