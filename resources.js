@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     container.innerHTML = "";
 
-    if (!selectedSkill.resources || selectedSkill.resources.length === 0) {
+    if (!selectedSkill.resources || !Array.isArray(selectedSkill.resources)) {
         container.innerHTML = "<p>No resources available for this skill.</p>";
         return;
     }
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         card.innerHTML = `
             <h3>${res.title}</h3>
-            <p>${res.description || "Helpful learning resource."}</p>
+            <p>${res.description}</p>
 
             <div class="resource-actions">
                 <a href="${res.link}" target="_blank" class="btn-primary">
