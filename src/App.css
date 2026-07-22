@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+#root {
+  min-height: 100vh;
+}
+
+.dark {
+  --bg: #071126;
+  --surface: #111827;
+  --surface-2: #182235;
+  --surface-3: #1e293b;
+  --text: #f8fafc;
+  --muted: #cbd5e1;
+  --border: rgba(148, 163, 184, 0.18);
+  --input: #182235;
+  --shadow: rgba(2, 8, 23, 0.24);
+
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.light {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-2: #f1f5f9;
+  --surface-3: #e2e8f0;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: rgba(15, 23, 42, 0.12);
+  --input: #ffffff;
+  --shadow: rgba(15, 23, 42, 0.08);
+
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark .dashboard,
+.dark .courses-page,
+.dark .roadmaps-page,
+.dark .resume-page,
+.dark .interview-page,
+.dark .lesson-page,
+.dark .course-details-page,
+.dark .roadmap-details-page,
+.dark .login-page,
+.dark .roadmap-hero,
+.dark .course-detail-page {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.dark .dashboard-content,
+.dark .dashboard-row .learning-card,
+.dark .dashboard-row .ai-card,
+.dark .stat-card,
+.dark .course-card,
+.dark .resume-card,
+.dark .upload-box,
+.dark .suggestions,
+.dark .missing-skills,
+.dark .preview-card,
+.dark .setup-card,
+.dark .ready-card,
+.dark .interview-box,
+.dark .result-card,
+.dark .ai-card,
+.dark .feedback-card,
+.dark .dashboard-card,
+.dark .question-palette,
+.dark .side-panel,
+.dark .lesson-card,
+.dark .course-detail-card,
+.dark .roadmap-card,
+.dark .login-card,
+.dark .roadmap-hero,
+.dark .hero-stat,
+.dark .navbar,
+.dark .sidebar,
+.dark .topbar,
+.dark .profile,
+.dark .icon-btn,
+.dark .search-box input,
+.dark .courses-top input,
+.dark .roadmap-filters,
+.dark .filter-card,
+.dark .auth-card,
+.dark .card,
+.dark .feature-card,
+.dark .testimonial-card,
+.dark .pricing-card,
+.dark .faq-item,
+.dark .newsletter-card {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+  box-shadow: 0 12px 28px var(--shadow);
+}
+
+.dark .search-box input,
+.dark .courses-top input,
+.dark .roadmap-filters input,
+.dark .resume-form input,
+.dark .resume-form textarea,
+.dark .login-form input,
+.dark .login-form select,
+.dark .login-form textarea {
+  background: var(--input);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.dark .tech-card,
+.dark .difficulty-card,
+.dark .setup-item,
+.dark .option-btn,
+.dark .palette-btn,
+.dark .stat-pill,
+.dark .chip,
+.dark .result-stats div,
+.dark .topic-card,
+.dark .course-info,
+.dark .progress-bar,
+.dark .progress,
+.dark .chart-track,
+.dark .roadmap-step,
+.dark .lesson-item {
+  background: var(--surface-2);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.dark .progress-fill,
+.dark .chart-fill {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+}
+
+.dark .nav-links a,
+.dark .logo,
+.dark .sidebar a,
+.dark .sidebar button,
+.dark .footer p,
+.dark .footer a,
+.dark .hero h1,
+.dark .hero p,
+.dark .features-section p,
+.dark .testimonial-card p,
+.dark .pricing-card p,
+.dark .faq-item p {
+  color: var(--text);
+}
+
+.dark .logo span,
+.dark .nav-links a:hover,
+.dark .sidebar a:hover,
+.dark .footer a:hover {
+  color: #60a5fa;
+}
+
+.light .dashboard,
+.light .courses-page,
+.light .roadmaps-page,
+.light .resume-page,
+.light .interview-page,
+.light .lesson-page,
+.light .course-details-page,
+.light .roadmap-details-page,
+.light .login-page,
+.light .roadmap-hero,
+.light .course-detail-page {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.light .dashboard-content,
+.light .dashboard-row .learning-card,
+.light .dashboard-row .ai-card,
+.light .stat-card,
+.light .course-card,
+.light .resume-card,
+.light .upload-box,
+.light .suggestions,
+.light .missing-skills,
+.light .preview-card,
+.light .setup-card,
+.light .ready-card,
+.light .interview-box,
+.light .result-card,
+.light .ai-card,
+.light .feedback-card,
+.light .dashboard-card,
+.light .question-palette,
+.light .side-panel,
+.light .lesson-card,
+.light .course-detail-card,
+.light .roadmap-card,
+.light .login-card,
+.light .roadmap-hero,
+.light .hero-stat,
+.light .navbar,
+.light .sidebar,
+.light .topbar,
+.light .profile,
+.light .icon-btn,
+.light .search-box input,
+.light .courses-top input,
+.light .roadmap-filters,
+.light .filter-card,
+.light .auth-card,
+.light .card,
+.light .feature-card,
+.light .testimonial-card,
+.light .pricing-card,
+.light .faq-item,
+.light .newsletter-card {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+  box-shadow: 0 12px 28px var(--shadow);
+}
+
+.light .search-box input,
+.light .courses-top input,
+.light .roadmap-filters input,
+.light .resume-form input,
+.light .resume-form textarea,
+.light .login-form input,
+.light .login-form select,
+.light .login-form textarea {
+  background: var(--input);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.light .tech-card,
+.light .difficulty-card,
+.light .setup-item,
+.light .option-btn,
+.light .palette-btn,
+.light .stat-pill,
+.light .chip,
+.light .result-stats div,
+.light .topic-card,
+.light .course-info,
+.light .progress-bar,
+.light .progress,
+.light .chart-track,
+.light .roadmap-step,
+.light .lesson-item {
+  background: var(--surface-2);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.light .progress-fill,
+.light .chart-fill {
+  background: linear-gradient(90deg, #2563eb, #8b5cf6);
+}
+
+.light .nav-links a,
+.light .logo,
+.light .sidebar a,
+.light .sidebar button,
+.light .footer p,
+.light .footer a,
+.light .hero h1,
+.light .hero p,
+.light .features-section p,
+.light .testimonial-card p,
+.light .pricing-card p,
+.light .faq-item p {
+  color: var(--text);
+}
+
+.light .logo span,
+.light .nav-links a:hover,
+.light .sidebar a:hover,
+.light .footer a:hover {
+  color: #2563eb;
+}
+
+/* Background Blur */
+
+.blur {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -1;
+}
+
+.blur1 {
+  width: 300px;
+  height: 300px;
+  background: #2563eb;
+  top: 100px;
+  left: -100px;
+}
+
+.blur2 {
+  width: 300px;
+  height: 300px;
+  background: #7c3aed;
+  bottom: 100px;
+  right: -100px;
+}
+
+/* Theme Button */
+
+.theme-btn{
+  position:fixed;
+  bottom:30px;
+  right:30px;
+
+  padding:14px 22px;
+  border:none;
+  border-radius:15px;
+
+  background:linear-gradient(135deg,#2563eb,#9333ea);
+
+  color:white;
+  cursor:pointer;
+  z-index:9999;
+}
+
+.theme-btn:hover {
+  transform: translateY(-3px);
+}
