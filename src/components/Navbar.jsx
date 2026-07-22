@@ -21,11 +21,19 @@ function Navbar() {
         </ul>
       </nav>
 
-      <Link to="/login">
-        <button className="login-btn">
-          Login
-        </button>
-      </Link>
+      <div className="nav-buttons">
+  <Link to="/dashboard">
+    <button className="dashboard-btn">
+      Dashboard
+    </button>
+  </Link>
+
+  <Link to="/login">
+    <button className="login-btn">
+      Login
+    </button>
+  </Link>
+</div>
 
     </header>
   );

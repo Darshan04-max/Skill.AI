@@ -19,7 +19,26 @@
 
     z-index:1000;
 }
+.nav-buttons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
 
+.dashboard-btn{
+    padding:13px 28px;
+    border:none;
+    border-radius:14px;
+    background:#1e293b;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.dashboard-btn:hover{
+    transform:translateY(-4px);
+    background:#334155;
+}
 .logo{
     display:flex;
     align-items:center;
